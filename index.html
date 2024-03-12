@@ -1,0 +1,152 @@
+<html>
+<head>
+
+	<style>
+          nav{
+          	background-color:skyblue;
+          }
+    header{
+    	background-color:skyblue;
+    }
+    .lamina1{
+
+    }
+	</style>
+
+<title> Concesionario de Rami </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+</Script>
+
+</head>
+<body>
+<center>
+	<header>
+<img src="https://s3.ppllstatics.com/diariosur/www/multimedia/202207/14/media/cortadas/carplus-RraKC3G3rLsoJYpuBpeIp7H-1248x770@Diario%20Sur.jpg" width="950" height="426">
+</header>
+
+<br>
+<nav>
+<a href="index.html" class="indice1"> Inicio </a>
+<a href="pagina1.html" class="indice2"> Perfil </a>
+<a href="pagina2.html" class="indice4"> Contactos </a>
+</nav>
+<br><br>
+<img src="https://i.gifer.com/VdgG.gif" width="120" height="90">
+</center>
+<br><br>
+
+<h1> ¿DÓNDE NOS ENCONTRAMOS? </h1>
+<center>
+<h2 class="titulo_lamina">NUESTRO CONCESIONARIO ESTÁ LOCALIZADO EN:</h2>
+<img src="ubi.png" width="500" height="300">
+</center>
+
+<br><br><br>
+<hr>
+
+<h1> PRODUCTOS POPULARES </h1>
+
+<br><br>
+
+<div class="caja">
+<div class="lamina1">
+<fieldset>
+<center>
+<h1 class="titulo_lamina">Altas potencias</h1>
+</center>
+<br>
+<img src="https://www.km77.com/revista/wp-content/files/2016/04/Ford-Mustang-_01.jpg" width="700" height="411">
+<h3>Ford Mustang GT Fastback 5.0 V8</h3>
+<img align=right src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2022/01/manhart-mh8-800-2581227.jpg?tf=3840x" width="700" height="411">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h3 align="right">BMW M8 Coupé 823 CV (Manhart MH8 800)</h3>
+</fieldset>
+</div>
+
+<br><br>
+
+<div class="lamina2">
+	<fieldset>
+<center>
+<h1 class="titulo_lamina">Nuevas tecnologías</h1>
+</center>
+<br>
+<img src="https://static.motor.es/fotos-jato/peugeot/uploads/peugeot-3008-648b5f5c7686f.jpg" width="700" height="411">
+<h3>Peugeot 3008, SUV Híbrido Enchufable</h3>
+<img align=right src="https://soymotor.com/sites/default/files/2024-02/dacia-spring-2024-soymotor-1.jpg" width="700" height="411">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h3 align="right">Dacia Spring</h3>
+</fieldset>
+</div>
+
+<br><br>
+
+<div class="lamina3">
+	<fieldset>
+<center>
+<h1 class="titulo_lamina">Productos únicos</h1>
+</center>
+<br>
+<img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2020/04/curiosidades-ferrari-f40-1918839.jpg?tf=3840x" width="700" height="411">
+<h3>Ferrari F40 (1987)</h3>
+<img align=right src="https://autoshowtv.com.mx/wp-content/uploads/2023/12/Lamborghini-Countach.jpg" width="700" height="411">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h3 align="right">Lamborghini Countach</h3>
+</fieldset>
+</div>
+
+<br><br><br><br><br>
+
+<center>
+	<fieldset>
+	    <h2>Para consultar precios sobre los vehículos, pasa por:</h2>
+	    <a href="pagina2.html" class="indice4"> Contactos </a>
+    </fieldset>
+</center>
+
+<br><br><br><br><br>
+<hr>
+
+<br>
+
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>

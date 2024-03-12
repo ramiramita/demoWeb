@@ -1,0 +1,90 @@
+<html>
+<title>Crea un perfil para conocerte</title>
+<head>
+	<style>
+		nav{
+          	background-color:skyblue;
+    }
+        header{
+    	    background-color:skyblue;
+    }
+	</style>
+</head>
+<body>
+<center>
+	<header>
+<img src="https://s3.ppllstatics.com/diariosur/www/multimedia/202207/14/media/cortadas/carplus-RraKC3G3rLsoJYpuBpeIp7H-1248x770@Diario%20Sur.jpg" width="950" height="426">
+</header>
+<br>
+<nav>
+<a href="index.html" class="indice1"> Inicio </a>
+<a href="pagina1.html" class="indice2"> Perfil </a>
+<a href="pagina2.html" class="indice4"> Contactos </a>
+</nav>
+<br><br>
+<img src="https://i.gifer.com/VdgG.gif" width="120" height="90">
+
+<br><br>
+
+<h2>CREA TU PERFIL PARA CONOCERTE AQUÍ ABAJO</h2>
+</center>
+<fieldset>
+	<legend>Datos del cliente</legend>
+	<p>Sexo</p>
+	<input type="checkbox" name="nombre" value="1">Masculino</input><br>
+	<input type="checkbox" name="nombre" value="1">Femenino</input><br>
+	<input type="checkbox" name="nombre" value="1">Otro</input><br>
+	<p>Nombre <input type="text" name="nombre" size="40"></p>
+	<p>DNI <input type="text" name="nombre" size="40"></p>
+	<p>Ciudad <input type="text" name="nombre" size="40"></p>
+	<p>País <input type="text" name="nombre" size="40"></p>
+	<p>Dirección <input type="text" name="nombre" size="40"></p>
+	<p>Correo electrónico <input type="text" name="nombre" size="40"></p>
+	<p>Teléfono <input type="text" name="nombre" size="40"></p>
+</fieldset>
+
+<br><br><br><br><br><br><br><br>
+<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date()
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+		document.write("Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	}
+
+</Script>
+<hr>
+<center>
+<h2 class="hora">
+<script>
+DameLaFechaHora();
+</script>
+</h2>
+</center>
+
+</body>
+</html>
